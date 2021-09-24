@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_graph"
+    app:startDestination="@+id/wordDetailsFragment">
+    <fragment
+        android:id="@+id/wordDetailsFragment"
+        android:name="ru.alexapps.personaldictionary.worddetails.WordDetailsFragment"
+        android:label="fragment_word_details"
+        tools:layout="@layout/fragment_word_details" >
+        <argument
+            android:name="word"
+            app:argType="string" />
+    </fragment>
+</navigation>
